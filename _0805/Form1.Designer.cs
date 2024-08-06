@@ -164,7 +164,7 @@
             this.Controls.Add(this.btnprevious);
             this.Controls.Add(this.btnnext);
             this.Controls.Add(this.daycontainer);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
