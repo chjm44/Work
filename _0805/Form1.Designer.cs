@@ -145,7 +145,7 @@
             this.LBDATE.Name = "LBDATE";
             this.LBDATE.Size = new System.Drawing.Size(489, 37);
             this.LBDATE.TabIndex = 10;
-            this.LBDATE.Text = "MONTH YEAR";
+            this.LBDATE.Text = "YEAR MONTH";
             this.LBDATE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1

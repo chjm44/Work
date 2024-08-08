@@ -13,18 +13,26 @@ namespace _0805
 {
     public partial class UserControlDays : UserControl
     {
+
         public UserControlDays()
         {
             InitializeComponent();
         }
 
-        private void UserControlDays_Load(object sender, EventArgs e)
-        {
-
-        }
         public void days(int numday)
         {
             lbdays.Text = numday + "";
         }
+
+        
+        private void UserControlDays_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            Form1 form1 = new Form1();
+            MessageBox.Show("선택 되었습니다.", form1.monthname + "월" + lbdays.Text + "일");
+            EventForm eventForm = new EventForm();
+            eventForm.Show();
+        }
+
+        
     }
 }

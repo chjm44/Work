@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Serialization;
 
 namespace _0805
 {
@@ -21,6 +22,7 @@ namespace _0805
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
             displaDays();
         }
 
@@ -31,8 +33,8 @@ namespace _0805
             year = now.Year;
             //Lets get the first day of the month.
             
-            String monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
-            LBDATE.Text =monthname + " " + year;
+            string monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
+            LBDATE.Text = year + " " + monthname;
             
             DateTime startofthemonth = new DateTime(year, month, 1);
             //get the count of days of the month
@@ -45,7 +47,7 @@ namespace _0805
             for (int i = 1; i < daysoftheweek; i++)
             {
                 UserControlBlank ucblank = new UserControlBlank();
-                daycontainer.Controls.Add(ucblank);
+                daycontainer.Controls.Add(ucblank); 
             }
             //now lets create usercontrol for days
             for (int i = 1; i <= days; i++)
@@ -121,5 +123,9 @@ namespace _0805
                 daycontainer.Controls.Add(ucdays);
             }
         }
+       
+        
+
+       
     }
 }
